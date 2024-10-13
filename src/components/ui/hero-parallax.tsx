@@ -122,9 +122,6 @@ export const ProductCard = ({
 }) => {
   return (
     <motion.div
-      style={{
-        // x: translate,
-      }}
       whileHover={{
         y: -20,
       }}

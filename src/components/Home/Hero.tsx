@@ -14,7 +14,7 @@ function Hero() {
             src={myImage} alt="hero" />
           </div>
           <div className='flex flex-col sm:mt-[8vw] mt-[12vw] text-wrap w-[80vw] sm:w-[45vw]'>
-              <h1 className='text-5xl font-bold'>Hello, I'm <span className='text-yellow-300'>Mohit.</span></h1>
+              <h1 className='text-5xl font-bold'>Hello, I<span>&#39;</span>m <span className='text-yellow-300'>Mohit.</span></h1>
               <p className='text-2xl mt-1'>
                 <Role />
               </p>

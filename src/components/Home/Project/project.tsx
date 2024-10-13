@@ -6,10 +6,6 @@ import car from "../../../public/car.png"
 import API from "../../../public/API.png"
 import currency from "../../../public/crrency.png"
 
-interface ComponentProps {
-  products: { title: string; link: string; thumbnail: string; }[];
-  size?: string;  // Add this line to include the size prop
-}
 
 function project() {
   return (

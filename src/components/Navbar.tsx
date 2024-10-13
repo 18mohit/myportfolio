@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import LinkedinIcon from "./icon";
 import XIcon from "./XIcon";
 import GithubIcon from "./GithubIcon";
 import { usePathname } from "next/navigation";
 
-const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
+const CustomLink = ({ href, title }: { href: string; title: string; }) => {
   const pathname = usePathname();
   const isActive = pathname === href;  
   return (
