@@ -4,80 +4,34 @@ const SvgComponent = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     width={256}
     height={256}
-    stroke="#000"
-    strokeWidth={0}
-    viewBox="0 0 32 32"
+    viewBox="0 10 65 50"
     {...props}
   >
-    <defs>
-      <linearGradient
-        id="a"
-        x1={-645.732}
-        x2={-654.59}
-        y1={839.188}
-        y2={839.25}
-        gradientTransform="matrix(-.977 -.323 -.29 .877 -375.944 -928.287)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset={0.231} stopColor="#999875" />
-        <stop offset={0.563} stopColor="#9b9977" />
-        <stop offset={0.683} stopColor="#a09f7e" />
-        <stop offset={0.768} stopColor="#a9a889" />
-        <stop offset={0.837} stopColor="#b7b69a" />
-        <stop offset={0.896} stopColor="#c9c7b0" />
-        <stop offset={0.948} stopColor="#deddcb" />
-        <stop offset={0.994} stopColor="#f8f6eb" />
-        <stop offset={1} stopColor="#fbf9ef" />
-      </linearGradient>
-      <linearGradient
-        id="b"
-        x1={-644.287}
-        x2={-657.028}
-        y1={823.405}
-        y2={845.476}
-        gradientTransform="matrix(-.977 -.323 -.29 .877 -375.944 -928.287)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset={0} stopColor="#48a547" />
-        <stop offset={1} stopColor="#3f9143" />
-      </linearGradient>
-      <linearGradient
-        id="c"
-        x1={-643.386}
-        x2={-652.418}
-        y1={839.485}
-        y2={833.417}
-        gradientTransform="matrix(-.977 -.323 -.29 .877 -375.944 -928.287)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset={0} stopColor="#41a247" />
-        <stop offset={0.352} stopColor="#4ba74b" />
-        <stop offset={0.956} stopColor="#67b554" />
-        <stop offset={1} stopColor="#69b655" />
-      </linearGradient>
-    </defs>
-    <title>{"file_type_mongo"}</title>
-    <path
-      stroke="none"
-      d="m16.62 30-.751-.249s.1-3.8-1.275-4.067c-.9-1.048.133-44.741 3.423-.149a2.712 2.712 0 0 0-1.333 1.523A14.1 14.1 0 0 0 16.62 30Z"
-      style={{
-        fill: "url(#a)",
-      }}
-    />
-    <path
-      stroke="none"
-      d="M17.026 26.329a13.223 13.223 0 0 0 5-13.225c-1.47-6.485-4.951-8.617-5.326-9.431a9.792 9.792 0 0 1-.825-1.6l.277 18.069s-.574 5.522.874 6.187Z"
-      style={{
-        fill: "url(#b)",
-      }}
-    />
-    <path
-      stroke="none"
-      d="M15.487 26.569S9.366 22.4 9.72 15.025a15.54 15.54 0 0 1 5.519-11.648A1.725 1.725 0 0 0 15.846 2c.381.82.319 12.243.359 13.579.155 5.197-.289 10.009-.718 10.99Z"
-      style={{
-        fill: "url(#c)",
-      }}
-    />
+    <title>{"databases-and-servers/databases/mongodb"}</title>
+    <g fill="none" fillRule="nonzero" strokeWidth={0.001}>
+      <rect
+        width={71}
+        height={71}
+        x={-1}
+        y={-1}
+        fill="#FFF"
+        stroke="#134514"
+        rx={14}
+        transform="translate(2 2)"
+      />
+      <path
+        fill="#A6A385"
+        d="m37.494 61.728-1.348-.46s.165-6.875-2.303-7.368c-1.644-1.908.264-80.918 6.185-.264 0 0-2.04 1.02-2.402 2.763-.395 1.711-.132 5.33-.132 5.33Z"
+      />
+      <path
+        fill="#499D4A"
+        d="M38.218 55.084s11.81-7.763 9.046-23.914c-2.664-11.743-8.947-15.591-9.638-17.071-.756-1.053-1.48-2.895-1.48-2.895l.494 32.663c0 .033-1.02 10 1.579 11.217"
+      />
+      <path
+        fill="#58AA50"
+        d="M35.456 55.511S24.37 47.946 25.028 34.624c.625-13.322 8.454-19.867 9.967-21.052.987-1.052 1.02-1.447 1.085-2.5.691 1.48.56 22.138.658 24.572.296 9.374-.526 18.091-1.282 19.867Z"
+      />
+    </g>
   </svg>
 )
 export default SvgComponent
