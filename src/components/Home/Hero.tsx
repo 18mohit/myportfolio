@@ -7,7 +7,7 @@ import Link from 'next/link';
 import LinkIcon from './LinkIcon';
 function Hero() {
   return (
-        <div className="flex mt-[9vw] justify-evenly h-[55vh]">
+        <div className="flex mt-[9vw] justify-evenly h-[55vh] ">
           <div className='-ml-28 hidden md:block'>
             <Image
             className='w-[30vw] h-[30vw] rounded-full opacity-65'
