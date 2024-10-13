@@ -76,7 +76,7 @@ export const Card = ({
         className
       )}
     >
-      <div className="relative z-50">
+      <div className="relative">
         <div className="p-4">{children}</div>
       </div>
     </div>

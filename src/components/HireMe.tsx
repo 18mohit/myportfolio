@@ -11,13 +11,13 @@ function HireMe() {
                 href="mailto:mohitptl183@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className='absolute hover:bg-sky-900 hover:text-white hover:text-2xl transition-colors duration-400 cursor-pointer
+                className='absolute hover:bg-sky-900 hover:text-white hover:text-xl transition-colors duration-400 cursor-pointer
                 bg-slate-300 shadow-lg font-bold text-black p-2 rounded-full w-16 h-16 sm:w-24 sm:h-24
-                flex items-center justify-center text-[3vw] sm:text-base md:text-lg'
+                flex items-center justify-center text-[3vw] sm:text-[4vw] sm:text-base md:text-lg z-10'
             >
                 Hire Me
             </Link>
-            <Image src={circle} alt='circle' className='animate-spin-slow sm:w-[20vw] w-[50vw] z-[-1]' />
+            <Image src={circle} alt='circle' className='animate-spin-slow sm:w-[20vw] w-[50vw] ' />
         </div>
     </div>
   )
