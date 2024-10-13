@@ -7,7 +7,7 @@ import Link from 'next/link';
 import LinkIcon from './LinkIcon';
 function Hero() {
   return (
-        <div className="flex mt-[9vw] justify-evenly h-[55vh] ">
+        <div className="flex mt-[9vw] justify-evenly h-[45vh]">
           <div className='-ml-28 hidden md:block'>
             <Image
             className='w-[30vw] h-[30vw] rounded-full opacity-65'
@@ -22,7 +22,7 @@ function Hero() {
                 <TextAnimation />
               </div>
               <div className='text-blue-700 text-xl mt-5 flex justify-end sm:mr-[8vw] mr-[2vw]'>
-                <Link className=' flex items-center text-[#00008b]' target="_blank" href="https://drive.google.com/file/d/1-94yfh_VmguSmM4uc3DZmNh3QvndhJ4b/view?usp=drive_link">Resume
+                <Link className='z-100 flex items-center text-blue-700' target="_blank" href="https://drive.google.com/file/d/1-94yfh_VmguSmM4uc3DZmNh3QvndhJ4b/view?usp=drive_link">Resume
                  <LinkIcon className='ml-[1px] underline' />
                 </Link>
               </div>
