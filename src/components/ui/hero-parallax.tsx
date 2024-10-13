@@ -5,7 +5,6 @@ import {
   useScroll,
   useTransform,
   useSpring,
-  MotionValue,
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,14 +28,6 @@ export const HeroParallax = ({
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
-  const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -200]),
-    springConfig
-  );
-  const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 200]),
-    springConfig
-  );
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
     springConfig
@@ -72,7 +63,6 @@ export const HeroParallax = ({
           {firstRow.map((product) => (
             <ProductCard
               product={product}
-              translate={translateXReverse}
               key={product.title}
             />
           ))}
@@ -81,7 +71,6 @@ export const HeroParallax = ({
           {secondRow.map((product) => (
             <ProductCard
               product={product}
-              translate={translateX}
               key={product.title}
             />
           ))}
@@ -111,14 +100,12 @@ export const Header = () => {
 
 export const ProductCard = ({
   product,
-  translate,
 }: {
   product: {
     title: string;
     link: string;
     thumbnail: string;
   };
-  translate: MotionValue<number>;
 }) => {
   return (
     <motion.div
@@ -126,7 +113,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product sm:h-[55vh] sm:w-[40vw] h-[30vh] w-full  relative flex-shrink-0"
+      className="group/product sm:h-[55vh] sm:w-[40vw] h-[30vh] w-full relative flex-shrink-0"
     >
       <Link
         href={product.link}
@@ -146,5 +133,5 @@ export const ProductCard = ({
       </h2>
     </motion.div>
   );
-};
+}
 
