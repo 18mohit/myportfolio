@@ -16,7 +16,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   return (
     <div
@@ -31,7 +31,7 @@ export const HoverEffect = ({
           key={item?.link}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
+          onMouseLeave={() => setHoveredIndex(-1)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
