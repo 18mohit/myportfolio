@@ -21,9 +21,9 @@ export const Cover = ({
 
   useEffect(() => {
     if (ref.current) {
-      setContainerWidth(ref.current?.clientWidth ?? 0);
-
-      const height = ref.current?.clientHeight ?? 0;
+      setContainerWidth(ref.current.clientWidth ?? 0);
+  
+      const height = ref.current.clientHeight ?? 0;
       const numberOfBeams = Math.floor(height / 10); // Adjust the divisor to control the spacing
       const positions = Array.from(
         { length: numberOfBeams },
@@ -31,7 +31,7 @@ export const Cover = ({
       );
       setBeamPositions(positions);
     }
-  }, []); 
+  }, [ref]);
 
   return (
     <div
@@ -136,18 +136,24 @@ export const Cover = ({
       >
         {children}
       </motion.span>
+      <CircleIcon className="absolute -right-[2px] -top-[2px]" />
+      <CircleIcon className="absolute -bottom-[2px] -right-[2px]" />
+      <CircleIcon className="absolute -left-[2px] -top-[2px]"  />
+      <CircleIcon className="absolute -bottom-[2px] -left-[2px]" />
     </div>
   );
 };
 
 export const Beam = ({
   className,
+  delay,
   duration,
   hovered,
   width = 600,
   ...svgProps
 }: {
   className?: string;
+  delay?: number;
   duration?: number;
   hovered?: boolean;
   width?: number;
@@ -190,6 +196,8 @@ export const Beam = ({
             duration: hovered ? 0.5 : duration ?? 2,
             ease: "linear",
             repeat: Infinity,
+            delay: hovered ? Math.random() * (1 - 0.2) + 0.2 : 0,
+            repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
           }}
         >
           <stop stopColor="#2EB9DF" stopOpacity="0" />
@@ -209,7 +217,7 @@ export const CircleIcon = ({
   return (
     <div
       className={cn(
-        `pointer-events-none animate-puls group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
+        `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
         className
       )}
     ></div>
