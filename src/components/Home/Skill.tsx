@@ -4,14 +4,14 @@ import React, { ReactNode } from 'react';
 import { motion } from "framer-motion";
 import HtmlIcon from "../Home/htmlIcon"
 import CssIcon from "../Home/cssIcon"
-import JsIcon from "../Home/JsIcon"
+import JsIcon from "@/components/Home/jsIcon"
 import ReactIcon from "../Home/ReactIcon"
-import ReduxIcon from "../Home/ReduxIcon"
+import ReduxIcon from "@/components/Home/reduxIcon"
 import TailwindIcon from "../Home/TailwindIcon"
-import NextIcon from "../Home/NextIcon"
-import NodejsIcon from "../Home/NodejsIcon"
-import MongoIcon from "../Home/MongoIcon"
-import GitIcon from "../Home/GitIcon"
+import NextIcon from "@/components/Home/nextIcon"
+import NodejsIcon from "@/components/Home/nodejsIcon"
+import MongoIcon from "@/components/Home/mongoIcon"
+import GitIcon from "@/components/Home/gitIcon"
 
 const Skills = ({
   icon,
@@ -52,7 +52,7 @@ interface SkillProps {
 function Skill({ skills }: SkillProps) {
   return (
     <>
-      <h1 className="text-4xl sm:mt-0 -mt-[40vw] font-bold ml-[2vw] text-blue-600">
+      <h1 className="text-4xl sm:mt-0 mt-[10vw] font-bold ml-[2vw] text-blue-600">
         Skills
       </h1>
 
