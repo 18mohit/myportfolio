@@ -2,6 +2,16 @@
 "use client"
 import React, { ReactNode } from 'react';
 import { motion } from "framer-motion";
+import HtmlIcon from "../Home/htmlIcon"
+import CssIcon from "../Home/cssIcon"
+import JsIcon from "../Home/JsIcon"
+import ReactIcon from "../Home/ReactIcon"
+import ReduxIcon from "../Home/ReduxIcon"
+import TailwindIcon from "../Home/TailwindIcon"
+import NextIcon from "../Home/NextIcon"
+import NodejsIcon from "../Home/NodejsIcon"
+import MongoIcon from "../Home/MongoIcon"
+import GitIcon from "../Home/GitIcon"
 
 const Skills = ({
   icon,
@@ -42,7 +52,7 @@ interface SkillProps {
 function Skill({ skills }: SkillProps) {
   return (
     <>
-      <h1 className="text-4xl sm:mt-0 mt-[10vw] font-bold ml-[2vw] text-blue-600">
+      <h1 className="text-4xl sm:mt-0 -mt-[40vw] font-bold ml-[2vw] text-blue-600">
         Skills
       </h1>
 
@@ -57,6 +67,50 @@ function Skill({ skills }: SkillProps) {
             y={skill.y}
           />
         ))}
+      </div>
+      <div className="sm:hidden block mb-[30vw] text-white">
+        <div className="grid grid-cols-2 gap-2 justify-items-center items-center">
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <HtmlIcon width={100} height={80} />
+            <p className="text-center">HTML</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <CssIcon width={100} height={80} />
+            <p className="text-center">CSS</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <JsIcon width={100} height={80} />
+            <p className="text-center">JavaScript</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <ReactIcon width={100} height={80} />
+            <p className="text-center">ReactJs</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <ReduxIcon width={100} height={80} />
+            <p className="text-center">Redux</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <TailwindIcon width={100} height={80} />
+            <p className="text-center">Tailwind</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <NextIcon className="w-20 h-20 rounded-full" width={100} height={80} />
+            <p className="text-center">NextJs</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <NodejsIcon width={100} height={80} />
+            <p className="text-center">NodeJs</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <MongoIcon width={100} height={80} />
+            <p className="text-center">MongoDB</p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-[30vw] h-[30vw]">
+            <GitIcon width={100} height={80} />
+            <p className="text-center">Git</p>
+          </div>
+        </div>
       </div>
     </>
   );

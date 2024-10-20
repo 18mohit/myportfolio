@@ -14,7 +14,6 @@ const SvgComponent = (props) => (
         height={71}
         x={-1}
         y={-1}
-        fill="#FFF"
         stroke="#134514"
         rx={14}
         transform="translate(2 2)"
