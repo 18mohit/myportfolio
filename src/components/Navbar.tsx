@@ -25,7 +25,7 @@ const CustomLink = ({ href, title }: { href: string; title: string; }) => {
 
 function Navbar() {
   return (
-    <nav className="fixed top-3 w-full flex justify-around items-center z-50 gap-1 sm:gap-4">
+    <nav className="fixed top-3 w-full flex justify-around items-center z-50 gap-1 text-white sm:gap-4">
       <div className="flex gap-10">
         <CustomLink href="/" title="Home" />
         <CustomLink href="/about" title="About" />

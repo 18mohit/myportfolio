@@ -12,7 +12,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ name }) => {
   return (
-    <div className="flex mt-[9vw] justify-evenly h-[45vh]">
+    <div className="flex mt-[9vw] justify-evenly h-[45vh] text-white">
       <div className='-ml-28 hidden md:block'>
         <Image
           className='w-[30vw] h-[30vw] rounded-full opacity-65'

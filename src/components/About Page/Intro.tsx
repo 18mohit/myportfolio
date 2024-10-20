@@ -6,8 +6,8 @@ import myImage from '../../public/myImage.jpg';
 function Intro() {
   return (
     <>
-      <div className=" mt-[20vw] sm:mt-[5vw] flex flex-col justify-center items-center">
-        <h1 className="text-[12vw] sm:text-[3vw] font-bold">About Me</h1>
+      <div className=" mt-[20vw] sm:mt-[5vw] flex flex-col text-white justify-center items-center">
+        <h1 className="text-[12vw] sm:text-[3vw] text-yellow-100 font-bold">About Me</h1>
         <div className='block md:hidden'>
             <Image
             className='w-[80vw] h-[80vw]  opacity-65'
@@ -33,7 +33,7 @@ function Intro() {
           </p>
         </div>
       </div>
-      <div className="ml-[4vw] mt-[7vh] gap-[10vh]">
+      <div className="ml-[4vw] text-white mt-[7vh] gap-[10vh]">
         <h1 className="text-[10vw] sm:text-[3vw] font-bold">Skills & Experience</h1>
         <div className="w-full font-bold mt-2 flex flex-col sm:flex-row gap-[1.5vw]">
           <div className="w-full font-bold mt-2 flex flex-row space-x-5 sm:space-x-0 justify-center sm:flex-row gap-[1.5vw]">
