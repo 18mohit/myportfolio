@@ -28,7 +28,7 @@ export const products = [
   },
   {
     title: "ABX School (MERN)",
-    link: "https://schoolof.netlify.app/",
+    link: "https://koutsuku9.netlify.app/",
     thumbnail:
       ABX,
   },
